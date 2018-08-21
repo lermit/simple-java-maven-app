@@ -40,6 +40,17 @@ public class AppTest
         }
     }
 
+    @Test
+    public void testEgalMain()
+    {
+        App.main(null);
+        try {
+            assertEquals(1, 2)
+        } catch (AssertionError e) {
+            fail("1 is not egal to 2 (ouaf !!)");
+        }
+    }
+
     @After
     public void cleanUpStreams() {
         System.setOut(null);
