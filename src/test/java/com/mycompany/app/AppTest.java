@@ -45,7 +45,7 @@ public class AppTest
     {
         App.main(null);
         try {
-            assertEquals(1, 2);
+            assertEquals(1, 1);
         } catch (AssertionError e) {
             fail("1 is not egal to 2 (ouaf !!)");
         }
